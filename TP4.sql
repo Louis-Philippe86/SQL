@@ -20,3 +20,4 @@ SELECT * FROM inv_personne ORDER BY (age) ASC
 SELECT COUNT(id) FROM inv_personne WHERE statut = "membre"
 
 SELECT statut, COUNT(statut) as "nb_acteur" FROM inv_personne GROUP BY (statut)
+ORDER BY "nb_acteur" DESC
